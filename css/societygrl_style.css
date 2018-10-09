@@ -1,0 +1,206 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	background: #1a1a1a;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* /CSS reset */
+/* Mobile break point */
+@media screen and (max-width: 800px) {
+  .work_wrapper {
+    padding-top: 5%;
+  }
+  .heading, .text {
+    min-width: 90%;
+  }
+	p.text {
+		font-size: 15px;
+	}
+	.decorative_line {
+		max-width: 90%;
+	}
+}
+/* /Mobile break point */
+/* Navigation */
+navigation {
+  width: 100%;
+  height: 64px;
+  background: #fff;
+  opacity: 1;
+  z-index: 999;
+  display: block;
+	-webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+.nav_wrapper {
+  max-width: 1024px;
+  width: 100%;
+	height: 100%;
+  margin: 0 auto 0 auto;
+}
+ul a li {
+  float: right;
+  color: #000;
+	height: 100%;
+  padding: 0 22px 0 22px;
+  list-style: none;
+  line-height: 64px;
+  font-size: 13px;
+	letter-spacing: .12em;
+  font-family: acumin-pro, sans-serif;
+	font-style: normal;
+  font-weight: 500;
+}
+.logo a {
+  float: left;
+  color: #000;
+  line-height: 64px;
+  letter-spacing: .12em;
+  font-size: 14px;
+  font-family: acumin-pro, sans-serif;
+	font-style: normal;
+  font-weight: 700;
+  padding: 0 22px 0px 22px;
+}
+ul a li:hover {
+  text-decoration: line-through;
+	opacity: 0.65;
+}
+/* /Navigation */
+/* Hero */
+.hero_wrapper {
+  max-width: 1200px;
+	width: 100%;
+  margin: 0 auto 0 auto;
+}
+.hero_img {
+  max-width: 1200px;
+	margin: 0 auto 0 auto;
+  padding: 10% 22px 10% 22px;
+}
+.project_title {
+	max-width: 1024px;
+	width: 70%;
+  margin: 0 auto 4% auto;
+  font-family: acumin-pro, sans-serif;
+	font-style: normal;
+  font-size: 2em;
+  text-align: center;
+	padding: 0 22px 0 22px;
+  font-weight: 700;
+	font-style: normal;
+  color: #fff;
+}
+/* /Hero */
+/* Text */
+.work_wrapper {
+  max-width: 1024px;
+	width: 100%;
+  margin: 0 auto 0 auto;
+}
+.decorative_line {
+  width: 95%;
+  height: 1px;
+  background: #fff;
+  margin: 0 auto 8% auto;
+  opacity: 0.12;
+}
+.heading {
+	max-width: 1024px;
+	width: 70%;
+  margin: 8% auto 0 auto;
+  font-family: acumin-pro, sans-serif;
+	font-style: normal;
+  font-size: 20px;
+  text-align: left;
+	padding: 0 22px 0 22px;
+  font-weight: 700;
+	font-style: normal;
+	line-height: 1.4em;
+  color: #fff;
+}
+.text {
+	max-width: 1024px;
+	width: 70%;
+  margin: 0 auto 4% auto;
+  font-family: acumin-pro, sans-serif;
+	font-style: normal;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  padding: 10px 22px 0 22px;
+  line-height: 1.4em;
+  color: #eee;
+}
+/* /Text */
+.img_1 {
+	max-width: 600px;
+	margin: 0 auto 0 auto;
+  padding: 3% 22px 3% 22px;
+}
+.img_2 {
+	max-width: 1024px;
+	margin: 0 auto 0 auto;
+  padding: 3% 22px 3% 22px;
+}
+.img_4 {
+	max-width: 320px;
+	margin: 0 auto 0 auto;
+  padding: 3% 22px 3% 22px;
+}
+/* /Work */
+/* Footer */
+.footer_container {
+	max-width: 1024px;
+  margin: 4% auto 32px auto;
+  text-align: center;
+  font-family: acumin-pro, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.4;
+}
+/* /Footer */
