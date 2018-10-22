@@ -1,0 +1,107 @@
+/* Mobile break point */
+@media screen and (max-width: 1080px) {
+	.flex-item-last {
+		margin-bottom: 10px !important;
+		padding: 0 !important;
+		max-width: none !important;
+		max-height: none !important;
+	}
+}
+@media screen and (max-width: 800px) {
+  h1.title {
+    margin-top: 80px;
+		font-size: 3em;
+		text-align: left;
+  }
+	.flex_container {
+	  margin-top: 88px !important;
+	}
+	.flex-item {
+		margin-bottom: 10px !important;
+		padding: 0 !important;
+	}
+}
+@media screen and (max-width: 414px) {
+  h1.title {
+		font-size: 3em;
+  }
+}
+/* /Mobile break point */
+/* Headings */
+.title {
+	width: 87.5%;
+	text-align: center;
+  margin: 120px auto 0 auto;
+  font-family: 'Montserrat', sans-serif;
+	font-size: 3.5em;
+  font-weight: 600;
+  color: #000;
+	-webkit-animation: fadein 1s ease-in; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 1s ease-in; /* Firefox < 16 */
+	-ms-animation: fadein 1s ease-in; /* Internet Explorer */
+	-o-animation: fadein 1s ease-in; /* Opera < 12.1 */
+	animation: fadein 1s ease-in;
+}
+.sub_title {
+	text-align: center;
+  margin: 0 22px 0 22px;
+  font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+  font-size: 20px;
+  Color: #111;
+  font-weight: 300;
+  padding-top: 32px;
+	-webkit-animation: fadein 1.6s ease-in; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 1.6s ease-in; /* Firefox < 16 */
+	-ms-animation: fadein 1.6s ease-in; /* Internet Explorer */
+	-o-animation: fadein 1.6s ease-in; /* Opera < 12.1 */
+	animation: fadein 1.6s ease-in;
+}
+/* /Headings */
+/* Work */
+.flex_container {
+  margin-top: 120px;
+}
+.flex-wrapper {
+  margin: 0 auto 0 auto;
+  max-width: 1016px;
+	width: 94%;
+  padding-bottom: 100px;
+  list-style: none;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  -webkit-flex-flow: row wrap;
+}
+.flex-item {
+	flex: 45%;
+	margin: 16px;
+  pointer-events: auto;
+	-webkit-transition: opacity .2s;
+  transition: opacity .2s;
+	transition-timing-function: ease-in-out;
+}
+.flex-item-last {
+	flex: 45%;
+	margin: 16px;
+	max-width: 476px;
+	max-height: 410.66px;
+  pointer-events: auto;
+	-webkit-transition: opacity .2s;
+  transition: opacity .2s;
+	transition-timing-function: ease-in-out;
+}
+a img {
+	outline: 1px solid rgba(0, 0, 0, 0.04);
+	outline-offset: -1px;
+}
+ol li a {
+	display: flex;
+}
+.flex-item:hover, .flex-item-last:hover {
+	opacity: 0.85;
+}
+/* /Work */
