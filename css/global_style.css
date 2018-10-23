@@ -1,0 +1,309 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	background: #fff;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* /CSS reset */
+/* Mobile break point */
+@media screen and (max-width: 1440px) {
+	.work_container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 880px;
+	}
+	.divider, .divider_2 {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 1040px) {
+	.work_container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 692px;
+	}
+	.divider, .divider_2 {
+		width: 692px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 800px) {
+	navigation .nav_wrapper .logo a {
+	  font-size: 1em;
+	}
+	navigation .nav_wrapper ul li a {
+		font-size: 0.9em;
+		margin-left: 40px;
+	}
+	.hero_wrapper {
+	  margin-top: 60px !important;
+	}
+	.work_container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 87.5%;
+	}
+	.img, .vid, .img_1, .img_2, .img_3, .img_4, .img_5, .vid_1, .vid_2 {
+		margin-bottom: 32px !important;
+	}
+	.divider, .divider_2 {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px !important;
+	}
+	.marker {
+		width: 80px;
+		margin: 60px 0 20px 0 !important;
+	}
+	h2.project_title {
+		margin: 40px auto 40px auto;
+		font-size: 1.5em;
+		text-align: center;
+		font-weight: 700;
+		color: #fff;
+	}
+	h3.heading {
+		font-size: 1.4em;
+		text-align: left;
+	}
+	p.text {
+		width: 100%;
+		font-size: 1em;
+		margin-bottom: 32px;
+		text-align: left;
+	}
+}
+@media screen and (max-width: 416px) {
+	navigation .nav_wrapper .logo a {
+		font-size: 0.9em;
+	}
+	navigation .nav_wrapper ul li a {
+		font-size: 0.8em;
+		margin-left: 24px;
+	}
+}
+/* /Mobile break point */
+/* Motion */
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+/* /Motion */
+/* Navigation */
+navigation {
+  width: 100%;
+  height: 68px;
+  background: #fff;
+  opacity: 1;
+  z-index: 999;
+  display: block;
+	-webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+.nav_wrapper {
+  max-width: 980px;
+  width: 90%;
+	height: 100%;
+  margin: 0 auto 0 auto;
+}
+ul li a {
+  float: right;
+  color: #000;
+  margin-left: 48px;
+  list-style: none;
+  line-height: 68px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.logo a {
+  float: left;
+  color: #000;
+  line-height: 68px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+  font-weight: 600;
+}
+.logo a .me {
+  line-height: 68px;
+	float: right;
+	color: #000;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	opacity: 1;
+}
+ul li a:hover {
+  text-decoration: line-through;
+	opacity: 0.65;
+}
+/* /Navigation */
+/* Hero */
+.hero_wrapper {
+  max-width: 1200px;
+	width: 87.5%;
+  margin: 60px auto 0 auto;
+}
+.hero_img {
+  max-width: 1200px;
+	margin: 0 auto 0 auto;
+}
+.project_title {
+	margin: 60px auto 60px auto;
+  font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+}
+/* /Hero */
+/* Text */
+.work_container {
+  max-width: 980px;
+	margin: 0 auto 0 auto;
+}
+.work_wrapper {
+  max-width: 980px;
+	display: block;
+	position: relative;
+  margin: 0 auto 0 auto;
+}
+.divider {
+	max-width: 980px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 auto 0 auto;
+  opacity: 0.12;
+	display: block;
+	position: relative;
+	margin-top: 8%;
+	margin-bottom: 60px;
+}
+.divider_2 {
+  max-width: 980px;
+  height: 1px;
+  background-color: #000;
+  margin: 80px auto 0 auto;
+  opacity: 0.12;
+	display: block;
+	position: relative;
+}
+.marker {
+	width: 48px;
+	margin: 24px auto 20px auto;
+	height: 1px;
+	background-color: #47cf73;
+	opacity: 1;
+	display: block;
+	position: relative;
+	margin-bottom: 20px;
+}
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+	line-height: normal;
+  color: #fff;
+}
+.text {
+	max-width: 680px;
+	margin: 0 auto 48px auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 16px;
+  line-height: 24px;
+  color: #fff;
+	opacity: 0.95;
+}
+/* /Text */
+/* Footer */
+.footer_container {
+	max-width: 980px;
+  margin: 4% auto 32px auto;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #000;
+  opacity: 0.5;
+}
+/* /Footer */
