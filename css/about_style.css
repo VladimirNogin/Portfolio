@@ -1,4 +1,11 @@
 /* Responsive */
+@media screen and (max-width: 1440px) {
+	.divider, .divider_2 {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 @media screen and (max-width: 1040px) {
 	.about_container {
 		margin-left: auto;
