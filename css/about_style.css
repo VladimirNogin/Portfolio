@@ -17,6 +17,11 @@
 		max-width: 400px;
 		margin-top: 40px;
 	}
+	.divider, .divider_2 {
+		width: 692px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.tools_wrapper {
 		width: 692px;
 	}
