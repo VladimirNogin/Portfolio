@@ -25,7 +25,7 @@
 /* /Responsive */
 /* Hero */
 .about_hero_container {
-	background-image: url('./images/about/bg.jpg');
+	background-image: url('/images/about/bg.jpg');
   background-color: #333;
   height: 600px;
   background-position: center;
@@ -174,7 +174,7 @@
 	margin: 3em auto 6em auto;
 }
 .hero_container_two {
-	background-image: url('./images/about/bike_bg.jpg');
+	background-image: url('/images/about/bike_bg.jpg');
   height: 600px;
   background-position: center;
   background-repeat: no-repeat;
