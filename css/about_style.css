@@ -10,7 +10,7 @@
 	.about_container {
 		margin-left: auto;
 		margin-right: auto;
-		width: 692px;
+		width: 692px !important;
 		flex-direction: column;
 	}
 	.img_1  {
@@ -18,7 +18,7 @@
 		margin-top: 40px;
 	}
 	.divider, .divider_2 {
-		width: 692px;
+		width: 692px !important;
 		margin-left: auto;
 		margin-right: auto;
 	}
