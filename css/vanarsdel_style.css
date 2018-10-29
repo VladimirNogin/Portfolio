@@ -1,19 +1,22 @@
-body {
-	background: #1a1a1a !important;
+/* Mobile break point */
+@media screen and (max-width: 1440px) {
+	.img_1 {
+		padding-bottom: 3% !important;
+	}
+	.hero_img {
+	  max-width: 1100px !important;
+	}
 }
+@media screen and (max-width: 1040px) {
+	.img_1 {
+		padding-bottom: 20px !important;
+	}
+}
+@media screen and (max-width: 800px) {
+}
+/* /Mobile break point */
 /* Images */
-.hero_img {
-  max-width: 1100px !important;
-	margin: 0 auto 0 auto;
-}
-.img_2 {
-	max-width: 980px;
-	margin: 0 auto 0 auto;
-	padding-bottom: 5%;
-}
-.img_3 {
-	max-width: 980px;
-	margin: 0 auto 0 auto;
+.img_1 {
 	padding-bottom: 5%;
 }
 /* /Images */
