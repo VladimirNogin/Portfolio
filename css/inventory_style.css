@@ -1,29 +1,36 @@
-body {
-	background: #1a1a1a !important;
+/* Mobile break point */
+@media screen and (max-width: 1440px) {
+	.img_1, .vid_1 {
+		padding-bottom: 3% !important;
+	}
+	.hero_img {
+	  max-width: 980px !important;
+	}
 }
+@media screen and (max-width: 1040px) {
+	.img_1, .vid_1 {
+		padding-bottom: 20px !important;
+	}
+}
+@media screen and (max-width: 800px) {
+}
+/* /Mobile break point */
 /* Hero */
-.hero_img {
-  max-width: 980px !important;
-	margin: 0 auto 0 auto;
-}
 /* /Hero */
 /* Text */
 .text a {
-	color: #2dde98;
+	color: #3be8b0;
 }
 .text a:hover {
-	opacity: 0.6;
+	opacity: 0.8;
+	text-decoration: underline;
 }
 /* /Text */
 /* Work */
-.img {
-	max-width: 980px;
-	margin: 0 auto 0 auto;
+.img_1 {
 	padding-bottom: 5%;
 }
-.vid {
-	max-width: 980px;
-	margin: 0 auto 0 auto;
+.vid_1 {
 	padding-bottom: 5%;
 }
 /* /Work */
