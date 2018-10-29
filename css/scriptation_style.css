@@ -1,78 +1,59 @@
-body {
-	background: #1a1a1a !important;
-}
 /* Mobile break point */
-@media screen and (max-width: 800px) {
-	.text_quotes {
-		min-width: 90%;
+@media screen and (max-width: 1440px) {
+	.hero_img {
+		max-width: 1100px !important;
 	}
-	.quote_reference {
-		min-width: 90%;
+	.img_1, .img_2, .img_3, .img_4, .vid_1, .vid_2 {
+		padding-bottom: 3% !important;
+	}
+}
+@media screen and (max-width: 1040px) {
+	.img_1, .img_2, .img_3, .img_4, .vid_1, .vid_2 {
+		padding-bottom: 20px !important;
+	}
+}
+@media screen and (max-width: 800px) {
+	p.text_quotes, p.quote_reference {
+		width: 100%;
+		text-align: left;
+		max-width: none;
 	}
 }
 /* /Mobile break point */
-/* Hero */
-.hero_img {
-  max-width: 980px;
-	margin: 0 auto 0 auto;
-}
-/* /Hero */
 /* Text */
 .text_quotes {
 	max-width: 680px;
 	margin: 0 auto 0 auto;
-  margin-bottom: 8px;
-  font-family: 'Montserrat', sans-serif;
 	font-style: italic;
-  font-size: 1.05em;
+  font-size: 15px;
   font-weight: 400;
   text-align: center;
-  padding-top: 8px;
-  line-height: normal;
-  color: #f5f5f5;
+  padding-top: 16px;
+  line-height: 24px;
+  color: #fff;
 }
 .quote_reference {
 	max-width: 680px;
 	margin: 0 auto 0 auto;
-  margin-bottom: 48px;
-  font-family: 'Montserrat', sans-serif;
-	font-style: normal;
-  font-size: 1.05em;
-  font-weight: 400;
+  padding-bottom: 48px;
+  font-size: 15px;
+  font-weight: 300;
   text-align: center;
   padding-top: 8px;
-  line-height: normal;
-  color: #3be8b0;
+  line-height: 24px;
+  color: #5fc9f8;
 }
 /* /Text */
 /* Work */
-.hero_img {
-  max-width: 1100px !important;
-	margin: 0 auto 0 auto;
-}
-.img {
-	max-width: 980px;
-	margin: 0 auto 0 auto;
+.img_1 {
 	padding-bottom: 5%;
 }
-.img_dial {
+.img_2 {
 	max-width: 800px;
 	margin: 0 auto 0 auto;
 	padding-bottom: 5%;
 }
-.img_2 {
-	max-width: 980px;
-	margin: 0 auto 0 auto;
-	padding-bottom: 5%;
-}
-.vid {
-	max-width: 980px;
-	margin: 0 auto 0 auto;
-	padding-bottom: 5%;
-}
-.img_redlines {
-	max-width: 980px;
-	margin: 0 auto 0 auto;
+.vid_1 {
 	padding-bottom: 5%;
 }
 /* /Work */
