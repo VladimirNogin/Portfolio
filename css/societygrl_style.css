@@ -1,12 +1,27 @@
-body {
-	background: #1a1a1a !important;
-}
 /* Hero */
 @media screen and (max-width: 1440px) {
-.hero_img {
-  max-width: 1100px !important;
-	margin: 0 auto 0 auto;
+	.img_1, .img_2, .img_3, .img_4 {
+		padding-bottom: 3% !important;
+	}
+	.hero_img {
+	  max-width: 1100px !important;
+	}
 }
+@media screen and (max-width: 1040px) {
+	.img_1, .img_2, .img_3, .img_4 {
+		padding-bottom: 20px !important;
+	}
+	.img_4, {
+		width: 60%;
+	}
+	.img_1 {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 800px) {
+	.img_4 {
+		width: 50%;
+	}
 }
 /* /Hero */
 .img_1 {
@@ -15,7 +30,6 @@ body {
 	padding-bottom: 5%;
 }
 .img_2 {
-	max-width: 980px;
 	padding-bottom: 5%;
 }
 .img_4 {
@@ -23,7 +37,7 @@ body {
 	margin: 0 auto 0 auto;
 	padding-bottom: 5%;
 }
-.img_old {
+.img_3 {
 	max-width: 800px;
 	margin: 0 auto 0 auto;
 	padding-bottom: 5%;
