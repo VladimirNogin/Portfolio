@@ -15,8 +15,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
 }
@@ -26,10 +24,11 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	font-family: 'Montserrat', sans-serif;
 	line-height: 1;
 	padding: 0;
 	margin: 0;
-	background: #fff;
+	background: #1a1a1a;
 }
 ol, ul {
 	list-style: none;
@@ -49,89 +48,57 @@ table {
 /* /CSS reset */
 /* Mobile break point */
 @media screen and (max-width: 1440px) {
-	.work_container {
-		margin-left: auto;
-		margin-right: auto;
-		width: 880px;
+	.hero_wrapper {
+		width: 87.5% !important;
 	}
-	.divider, .divider_2 {
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.text {
-		width: 90%;
+	.work_wrapper {
+		width: 900px !important;
 	}
 }
 @media screen and (max-width: 1040px) {
-	.work_container {
-		margin-left: auto;
-		margin-right: auto;
-		width: 692px;
+	h2.project_title {
+		margin: 40px auto 40px auto;
+		font-size: 28px;
 	}
-	.divider, .divider_2 {
-		width: 692px;
-		margin-left: auto;
-		margin-right: auto;
+	.work_wrapper {
+		width: 692px !important;
 	}
-	.text {
-		width: 80%;
+	h3.heading {
+	  font-size: 20px;
+	}
+	p.text {
+		width: 90%;
+		font-size: 15px;
+		margin-bottom: 32px;
+		max-width: none;
 	}
 }
 @media screen and (max-width: 800px) {
-	navigation .nav_wrapper .logo a {
-	  font-size: 1em;
-	}
 	navigation .nav_wrapper ul li a {
-		font-size: 0.9em;
+		font-size: 15px;
 		margin-left: 40px;
 	}
-	.hero_wrapper {
-	  margin-top: 60px !important;
-	}
-	.work_container {
-		margin-left: auto;
-		margin-right: auto;
-		width: 87.5%;
-	}
-	.img, .vid, .img_1, .img_2, .img_3, .img_4, .img_5, .vid_1, .vid_2 {
-		margin-bottom: 32px !important;
-	}
-	.divider, .divider_2 {
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 40px !important;
+	.work_wrapper {
+		width: 87.5% !important;
 	}
 	.marker {
-		width: 80px;
-		margin: 60px 0 20px 0 !important;
+		margin: 40px 0 12px 0 !important;
 	}
 	h2.project_title {
-		margin: 40px auto 40px auto;
-		font-size: 1.5em;
-		text-align: center;
-		font-weight: 700;
-		color: #fff;
+		font-size: 24px;
 	}
 	h3.heading {
-		font-size: 1.4em;
 		text-align: left;
 	}
 	p.text {
 		width: 100%;
-		font-size: 1em;
-		margin-bottom: 32px;
 		text-align: left;
 	}
 }
-@media screen and (max-width: 416px) {
-	navigation .nav_wrapper .logo a {
-		font-size: 0.9em;
-	}
-	navigation .nav_wrapper ul li a {
-		font-size: 0.8em;
-		margin-left: 24px;
+@media screen and (max-width: 450px) {
+	navigation .nav_wrapper .logo a .me {
+		visibility: hidden;
+		display: none;
 	}
 }
 /* /Mobile break point */
@@ -183,10 +150,8 @@ ul li a {
   float: right;
   color: #000;
   margin-left: 48px;
-  list-style: none;
   line-height: 68px;
   font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 .logo a {
@@ -194,8 +159,6 @@ ul li a {
   color: #000;
   line-height: 68px;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-	font-style: normal;
   font-weight: 600;
 }
 .logo a .me {
@@ -203,10 +166,7 @@ ul li a {
 	float: right;
 	color: #000;
 	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-	font-style: normal;
 	font-weight: 300;
-	opacity: 1;
 }
 ul li a:hover {
   text-decoration: line-through;
@@ -215,8 +175,7 @@ ul li a:hover {
 /* /Navigation */
 /* Hero */
 .hero_wrapper {
-  max-width: 1200px;
-	width: 87.5%;
+	width: 100%;
   margin: 60px auto 0 auto;
 }
 .hero_img {
@@ -225,57 +184,48 @@ ul li a:hover {
 }
 .project_title {
 	margin: 60px auto 60px auto;
-  font-family: 'Montserrat', sans-serif;
-	font-style: normal;
-  font-size: 2em;
+  font-size: 34px;
   text-align: center;
+	line-height: normal;
   font-weight: 600;
   color: #fff;
 }
 /* /Hero */
 /* Text */
 .work_container {
-  max-width: 980px;
+	width: 100%;
 	margin: 0 auto 0 auto;
 }
 .work_wrapper {
   max-width: 980px;
+	width: 100%;
 	display: block;
 	position: relative;
   margin: 0 auto 0 auto;
 }
 .divider {
 	max-width: 980px;
+	width: 100%;
   height: 1px;
   background-color: #fff;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 60px auto;
   opacity: 0.12;
-	display: block;
-	position: relative;
-	margin-top: 8%;
-	margin-bottom: 60px;
-}
-.divider_2 {
-  max-width: 980px;
-  height: 1px;
-  background-color: #000;
-  margin: 80px auto 0 auto;
-  opacity: 0.12;
-	display: block;
-	position: relative;
 }
 .marker {
-	width: 48px;
-	margin: 24px auto 20px auto;
-	height: 1px;
-	background-color: #47cf73;
+	width: 24px;
+	margin: 24px auto 0 auto;
+	height: 2px;
+	background-color: #3be8b0;
 	opacity: 1;
 	display: block;
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 12px;
+	border-radius: 1px;
+	-webkit-box-shadow: 0 3px 10px 1px rgba(59, 232, 176, 0.5);
+	-moz-box-shadow: 0 3px 10px 1px rgba(59, 232, 176, 0.5);
+	box-shadow: 0 3px 10px 1px rgba(59, 232, 176, 0.5);
 }
 .heading {
-  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   text-align: center;
   font-weight: 500;
@@ -284,12 +234,12 @@ ul li a:hover {
 }
 .text {
 	max-width: 680px;
+	width: 100%;
 	margin: 0 auto 48px auto;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
-  padding-top: 16px;
+  padding-top: 12px;
   line-height: 24px;
   color: #fff;
 	opacity: 0.95;
@@ -300,7 +250,6 @@ ul li a:hover {
 	max-width: 980px;
   margin: 4% auto 32px auto;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
   font-size: 0.7em;
   font-weight: 400;
   color: #000;
